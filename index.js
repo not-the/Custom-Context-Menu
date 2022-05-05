@@ -16,3 +16,8 @@ function contextMenu(event) {
     elContextMenu.style.left = `${x}px`;
     elContextMenu.focus();
 }
+
+document.addEventListener('keydown', event => {
+    let key = event.key;
+    if(key == 'Escape') { elContextMenu.blur(); } 
+});

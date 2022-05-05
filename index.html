@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom</title>
+
+    <!-- not-util -->
+    <script src="https://not-the.github.io/not-util/not-util.js" crossorigin></script>
+    <link rel="stylesheet" href="https://not-the.github.io/not-util/not-util.css" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="clickme" oncontextmenu="contextMenu(event)">
+        Right click me
+    </div>
+
+    <div id="context_menu_container">
+        <div id="context_menu" tabindex="0">
+            <div class="context_item" tabindex="0">
+                Reload
+            </div>
+            <div class="context_item" tabindex="0">
+                Item 2
+            </div>
+            <hr>
+            <div class="context_folder">
+                <div class="context_folder_label" tabindex="0">
+                    New file
+                </div>
+                <div class="context_folder_contents">
+                    <div class="context_item" tabindex="0">
+                        Hello
+                    </div>
+                    <div class="context_item" tabindex="0">
+                        More things
+                    </div>
+                </div>
+            </div>
+            <div class="context_item" tabindex="0">
+                Item 3
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+</html>
